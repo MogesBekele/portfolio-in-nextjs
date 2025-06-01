@@ -57,7 +57,7 @@ const Navbar = () => {
         </div>
         {/* Mobile menu */}
         <ul
-          className={`fixed top-0 right-0 w-64 h-screen bg-rose-50 flex flex-col gap-4 py-20 z-50 shadow-lg transform transition-transform duration-500 md:hidden ${
+          className={`fixed top-0 right-0 w-64 h-screen  bg-rose-50 flex flex-col gap-4 py-20 z-50 shadow-lg transform transition-transform duration-500 md:hidden ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
