@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
         <Image alt="" src={assets.header_bg_color} className="w-full" />
       </div>
-      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 bg-white/80 backdrop-blur-md shadow">
+      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 bg-white/80 backdrop-blur-md">
         <a href="#top">
           <Image
             src={assets.logo}
