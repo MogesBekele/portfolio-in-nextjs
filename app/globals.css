@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
-*{
-  font-family: Outfit;
+/* Remove any global font-family setting.
+   Fonts are now available as CSS variables:
+   --font-outfit and --font-ovo (set in layout.tsx)
+
+
+Example usage (you can apply these classes or styles wherever you want): */
+
+ .font-outfit {
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
 }
 
-/**/
-
+.font-ovo {
+  font-family: var(--font-ovo), 'Ovo', serif;
+} 
