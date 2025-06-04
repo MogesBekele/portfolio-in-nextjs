@@ -6,7 +6,6 @@
 @theme inline {
    --font-main : var(--font-outfit);
    --font-ovo: var(--font-ovo)
-  --font-display: "Satoshi", "sans-serif";
   --color-lightHover: "#fcf4ff"
   --color-darkHover: "#2a004a"
   --color-darkTheme: '#11001F'

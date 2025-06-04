@@ -16,7 +16,7 @@ const About = () => {
           />
         </div>
         <div className="flex-1 ">
-          <p className=" mb-10 max-w-2xl font-main">
+          <p className=" mb-10 max-w-2xl font-ovo">
             i am exprienced Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Laudantium sunt, sit officia quisquam ex minus. Neque quis cum
             quo vitae laboriosam consequuntur. Iste accusamus atque sequi
