@@ -3,9 +3,9 @@
 /* *{
   font-family: Outfit;
 } */
-@theme {
-   --font-main : Outfit;
-   --font-ovo: "serif"
+@theme inline{
+   --font-main : var(--font-outfit);
+   --font-ovo: var(--font-ovo)
   --font-display: "Satoshi", "sans-serif";
   --breakpoint-3xl: 120rem;
   --color-avocado-100: oklch(0.99 0 0);
@@ -19,5 +19,6 @@
   --color-lightHover: "#fcf4ff"
   --color-darkHover: "#2a004a"
   --color-darkTheme: '#11001F'
+ 
 
 }

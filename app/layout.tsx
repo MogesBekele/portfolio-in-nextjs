@@ -16,7 +16,6 @@ const ovo = Ovo({
   variable: "--font-ovo",
   weight: ["400"],
 });
-
 export default function RootLayout({
   children,
 }: Readonly<{
