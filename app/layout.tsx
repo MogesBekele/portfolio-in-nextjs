@@ -5,7 +5,6 @@ export const metadata: Metadata = {
   title: "Portfolio in Next.js",
   description: "",
 };
-
 // Initialize the Google fonts with variable option
 const outfit = Outfit({
   subsets: ["latin"],
