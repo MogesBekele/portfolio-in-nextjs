@@ -98,14 +98,33 @@ export const workData = [
         bgImage: '/work-4.png',
     },
 ]
-
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
-
+    {
+        icon: assets.web_icon,
+        title: 'Frontend development',
+        description: 'Frontend development involves building the user interface and user experience of web applications. I use modern frameworks like React and Next.js to create fast, responsive, and visually appealing websites that work seamlessly across devices.',
+        link: ''
+    },
+    {
+        icon: assets.mobile_icon,
+        title: 'Backend development',
+        description: 'Backend development focuses on server-side logic, databases, and APIs. I design and implement robust, scalable, and secure backend systems using technologies like Node.js, Express, and MongoDB to power your applications.',
+        link: ''
+    },
+      {
+        icon: assets.graphics_icon,
+        title: 'Fullstack development',
+        description: 'Fullstack development combines both frontend and backend expertise. I deliver complete web solutions, handling everything from designing user interfaces to building secure server-side logic and integrating databases for a smooth end-to-end experience.',
+        link: ''
+    },
+    {
+        icon: assets.ui_icon,
+        title: 'UI/UX design',
+        description: 'UI/UX design focuses on creating a seamless user experience and visually appealing interfaces. I craft intuitive layouts and engaging designs that enhance usability and delight your users.',
+        link: ''
+    },
+  
+];
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
