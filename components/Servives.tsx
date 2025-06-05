@@ -12,7 +12,7 @@ const Servives = () => {
 
         {
           serviceData.map(({icon, title, description, link}, index)=>(
-            <div key={index}> 
+            <div className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lighHover hover:-traslate-y-1 duration-500' key={index}> 
 
               <Image src={icon} alt='' className='w-10'/>
               <h3 className='text-lg my-4 text-gray-700'>{title}</h3>
