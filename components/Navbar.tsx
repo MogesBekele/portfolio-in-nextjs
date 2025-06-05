@@ -32,7 +32,7 @@ const Navbar = () => {
         }`}
       >
         <a href="#top">
-          <h1 className="w-28 font-semibold text-4xl cursor-pointer mr-14 font-main">
+          <h1 className="w-28 font-semibold text-3xl cursor-pointer mr-14 font-ovo">
             Moges<span className="text-red-700">.</span>
           </h1>
         </a>
