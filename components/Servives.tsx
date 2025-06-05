@@ -19,36 +19,40 @@ const Servives = () => {
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius non blanditiis libero accusamus molestiae, maxime suscipit eos provident facilis voluptas ex distinctio saepe,
       </p>
       
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-10'>
-        {
-          serviceData.map(({icon, title, description}, index)=> {
-            const isLong = description.length > MAX_DESCRIPTION_LENGTH;
-            const isOpen = expanded === index;
-            return (
-              <div
-                key={index}
-                className='border border-gray-300 rounded-lg px-8 py-12 bg-white cursor-pointer transition duration-300 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.25)] hover:-translate-y-1 hover:-translate-x-1'
-              > 
-                <Image src={icon} alt='' className='w-10'/>
-                <h3 className='text-lg my-4 text-gray-700'>{title}</h3>
-                <p className='text-sm text-gray-600 leading-5'>
-                  {isOpen || !isLong
-                    ? description
-                    : truncate(description, MAX_DESCRIPTION_LENGTH)}
-                </p>
-                {isLong && (
-                  <button
-                    className="mt-2 text-blue-600 hover:underline text-sm font-medium focus:outline-none"
-                    onClick={() => setExpanded(isOpen ? null : index)}
-                  >
-                    {isOpen ? "Show less" : "Read more"}
-                  </button>
-                )}
-              </div>
-            )
-          })
-        }
-      </div>
+  <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-2 gap-6 my-10'>
+  {
+    serviceData.map(({icon, title, description}, index)=> {
+      const isLong = description.length > MAX_DESCRIPTION_LENGTH;
+      const isOpen = expanded === index;
+      return (
+        <div
+          key={index}
+          className={
+            'border border-gray-300 rounded-lg px-8 py-12 bg-white cursor-pointer transition duration-300' +
+            (isOpen ? ' shadow-[6px_6px_0px_0px_rgba(0,0,0,0.25)] -translate-y-1 -translate-x-1' : '') +
+            ' hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.25)] hover:-translate-y-1 hover:-translate-x-1'
+          }
+        > 
+          <Image src={icon} alt='' className='w-10'/>
+          <h3 className='text-lg my-4 text-gray-700'>{title}</h3>
+          <p className='text-sm text-gray-600 leading-5'>
+            {isOpen || !isLong
+              ? description
+              : truncate(description, MAX_DESCRIPTION_LENGTH)}
+          </p>
+          {isLong && (
+            <button
+              className="mt-2 text-blue-600 hover:underline text-sm font-medium focus:outline-none"
+              onClick={() => setExpanded(isOpen ? null : index)}
+            >
+              {isOpen ? "Show less" : "Read more"}
+            </button>
+          )}
+        </div>
+      )
+    })
+  }
+</div>
     </div>
   )
 }
