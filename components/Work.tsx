@@ -1,3 +1,4 @@
+import { workData } from '@/assets/assets'
 import React from 'react'
 
 const Work = () => {
@@ -8,6 +9,15 @@ const Work = () => {
       <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>
       welcome to my web development portfolio Explore a collection of projects showcasing my expertise in fullstack development
       </p>
+      <div>
+        {workData.map((project, index)=>(
+          <div key={index} style={{backgroundImage: `url(${project.bgImage})`}}  >
+            
+            
+
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
