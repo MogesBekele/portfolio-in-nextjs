@@ -1,4 +1,4 @@
-import { assets, serviceData } from '@/assets/assets'
+import { serviceData } from '@/assets/assets'
 import React, { useState } from 'react'
 import Image from "next/image";
 
