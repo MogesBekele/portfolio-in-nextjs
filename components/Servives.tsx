@@ -19,7 +19,7 @@ const Servives = () => {
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius non blanditiis libero accusamus molestiae, maxime suscipit eos provident facilis voluptas ex distinctio saepe,
       </p>
       
-  <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-2 gap-6 my-10'>
+  <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-2 gap-6 my-10 m-5'>
   {
     serviceData.map(({icon, title, description}, index)=> {
       const isLong = description.length > MAX_DESCRIPTION_LENGTH;
