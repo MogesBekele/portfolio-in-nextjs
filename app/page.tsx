@@ -1,5 +1,6 @@
 "use client";
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Servives from "@/components/Servives";
@@ -13,6 +14,7 @@ export default function Home() {
       <About/>
       <Servives/>
       <Work/>
+      <Contact/>
     </>
   );
 }
