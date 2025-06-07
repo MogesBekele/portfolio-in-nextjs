@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import { assets } from "@/assets/assets";
 
 const Contact = () => {
   return (
@@ -35,9 +37,10 @@ const Contact = () => {
         ></textarea>
         <button
           type="submit"
-          className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition"
+        className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80
+         text-white rounded-full mx-auto hover:bg-black duration-500"
         >
-          Submit now
+          Submit now <Image alt="" src={assets.right_arrow_white} className="w-4"/>
         </button>
       </form>
     </div>
