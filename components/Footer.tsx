@@ -14,6 +14,15 @@ const Footer = () => {
           mogesbekele32@gmail.com
         </div>
       </div>
+      <div>
+        <p>2025 Moges Bekele. all rights reserved.</p>
+        <ul>
+          <li><a target="_blank" href="https://github.com/MogesBekele">GitHub</a></li>
+             <li><a target="_blank" href="https://www.instagram.com/moges.bek/">Instagram</a></li>
+                <li><a target="_blank" href="https://web.facebook.com/">Facebook</a></li>
+                   <li><a target="_blank" href="https://t.me/moges868">Telegram</a></li>
+        </ul>
+      </div>
     </div>
   );
 };
