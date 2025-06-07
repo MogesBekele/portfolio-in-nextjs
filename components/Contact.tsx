@@ -5,10 +5,10 @@ import { assets } from "@/assets/assets";
 const Contact = () => {
   const [result, setResult] = useState("");
 
-  const onSubmit = async (event) => {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult("Sending....");
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.target as HTMLFormElement);
 
     formData.append("access_key", "161d4ae9-caa4-496c-bda2-e23aeee07b69");
 
@@ -21,12 +21,12 @@ const Contact = () => {
 
     if (data.success) {
       setResult("Form Submitted Successfully");
-      event.target.reset();
+      (event.target as HTMLFormElement).reset();
     } else {
       console.log("Error", data);
       setResult(data.message);
     }
-  }; 
+  };
 
   return (
     <div
