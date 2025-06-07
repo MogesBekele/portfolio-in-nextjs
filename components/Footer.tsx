@@ -5,7 +5,7 @@ import { assets } from "@/assets/assets";
 const Footer = () => {
   return (
     <footer className="mt-20 bg-gradient-to-t from-gray-100 via-white to-transparent py-10 px-4">
-      <div className="max-w-3xl mx-auto flex flex-col items-center gap-6 mb-5">
+      <div className="max-w-3xl mx-auto flex flex-col items-center gap-6 mb-4">
         <h1 className="font-ovo text-3xl font-semibold flex items-center gap-1">
           <span className="tracking-wide">Moges</span>
           <span className="text-red-700">.</span>
@@ -19,7 +19,7 @@ const Footer = () => {
             mogesbekele32@gmail.com
           </a>
         </div>
-        <hr className="w-full border-t-2 border-gray-200 my-2 mx-10" />
+        <hr className="w-full border-t-3 border-gray-200 my-2 mx-10" />
         <ul className="grid grid-cols-2 gap-4 sm:flex sm:gap-6 mt-2">
           <li>
             <a
