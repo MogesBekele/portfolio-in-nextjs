@@ -1,6 +1,7 @@
 "use client";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Servives from "@/components/Servives";
@@ -15,6 +16,7 @@ export default function Home() {
       <Servives/>
       <Work/>
       <Contact/>
+      <Footer/>
     </>
   );
 }
