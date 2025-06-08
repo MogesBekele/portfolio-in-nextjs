@@ -1,6 +1,7 @@
 import { serviceData } from "@/assets/assets";
 import React, { useState } from "react";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const MAX_DESCRIPTION_LENGTH = 100;
 
@@ -12,24 +13,52 @@ const Servives = () => {
   const [expanded, setExpanded] = useState<number | null>(null);
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
       id="services"
       className="w-full px-4 md:px-[8%] py-10 scroll-mt-20 pt-32"
     >
-      <h4 className="text-center mb-2 text-lg font-ovo">What I offer </h4>
-      <h2 className="text-center text-5xl font-ovo">My Services</h2>
-      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo">
+      <motion.h4
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.3, delay: 0.5 }}
+        className="text-center mb-2 text-lg font-ovo"
+      >
+        What I offer{" "}
+      </motion.h4>
+      <motion.h2
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="text-center text-5xl font-ovo"
+      >
+        My Services
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7, delay: 0.5 }}
+        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo"
+      >
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius non
         blanditiis libero accusamus molestiae, maxime suscipit eos provident
         facilis voluptas ex distinctio saepe,
-      </p>
+      </motion.p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-2 gap-6 my-10 m-5">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.0, delay: 0.6 }}
+        className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-2 gap-6 my-10 m-5"
+      >
         {serviceData.map(({ icon, title, description }, index) => {
           const isLong = description.length > MAX_DESCRIPTION_LENGTH;
           const isOpen = expanded === index;
           return (
-            <div
+            <motion.div
+              whileHover={{ scale: 1.05 }}
               key={index}
               className={
                 "border border-gray-300 rounded-lg px-8 py-12 bg-white cursor-pointer transition duration-300" +
@@ -54,11 +83,11 @@ const Servives = () => {
                   {isOpen ? "Show less" : "Read more"}
                 </button>
               )}
-            </div>
+            </motion.div>
           );
         })}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
