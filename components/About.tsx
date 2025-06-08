@@ -67,7 +67,7 @@ const About = () => {
           >
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <motion.li
-                whileInView={{ scale: 1.05 }}
+                whileHover={{ scale: 1.05 }}
                 className="border-[.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black"
                 key={index}
               >
@@ -77,18 +77,29 @@ const About = () => {
               </motion.li>
             ))}
           </motion.ul>
-          <h4 className="my-6 text-gray-700 font-main">Tools I use</h4>
-          <ul className="flex items-center gap-3 sm:gap-5">
+          <motion.h4
+              initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1.3, delay: 0.5 }}
+          
+          className="my-6 text-gray-700 font-main">Tools I use</motion.h4>
+          <motion.ul
+              initial={{  opacity: 0 }}
+        whileInView={{  opacity: 1 }}
+        transition={{ duration: 1.5, delay: 0.6 }}
+          
+          className="flex items-center gap-3 sm:gap-5">
             {toolsData.map((tool, index) => (
-              <li
+              <motion.li
+              whileHover={{scale: 1.1}}
                 className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
               cursor-pointer hover:-translate-y-1 duration-500"
                 key={index}
               >
                 <Image src={tool} alt="tool" className="w-5 sm:w-7" />
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
         </motion.div>
       </motion.div>
     </motion.div>
