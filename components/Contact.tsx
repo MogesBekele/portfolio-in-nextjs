@@ -92,10 +92,9 @@ const Contact = () => {
           />
         </div>
         <motion.textarea
-
-                initial={{ y: 100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.3, delay: 0.6 }}
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.3, delay: 0.6 }}
           rows={6}
           placeholder="Enter your message"
           name="message"
@@ -103,10 +102,8 @@ const Contact = () => {
           className="border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 transition resize-none"
         ></motion.textarea>
         <motion.button
-
-          whileHover={{scale: 1.05}}
-          transition={{duration: 0.3}}
-
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
           type="submit"
           className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80
          text-white rounded-full mx-auto hover:bg-black duration-500"
