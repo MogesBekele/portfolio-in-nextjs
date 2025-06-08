@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
+import { motion } from "motion/react";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -29,17 +30,39 @@ const Contact = () => {
   };
 
   return (
-    <div
+    <motion.div
+        initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+
       id="contact"
       className="w-full px-4 md:px-[8%] py-10 scroll-mt-20 pt-32 bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto]"
     >
-      <h4 className="text-center mb-2 text-lg font-ovo">Connect with me</h4>
-      <h2 className="text-center text-5xl font-ovo">Get in touch</h2>
-      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo">
+      <motion.h4
+         initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.3, delay: 0.5 }}
+      
+      className="text-center mb-2 text-lg font-ovo">Connect with me</motion.h4>
+      <motion.h2
+         initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      
+      className="text-center text-5xl font-ovo">Get in touch</motion.h2>
+      <motion.p
+         initial={{  opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7, delay: 0.5 }}
+      
+      className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo">
         I'd love to hear from you! If you have any questions, comments, or
         feedback please use the form below
-      </p>
-      <form
+      </motion.p>
+      <motion.form
+         initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
         onSubmit={onSubmit}
         className="max-w-2xl mx-auto flex flex-col gap-6 bg-white/80 p-8 rounded-lg shadow"
       >
@@ -75,8 +98,8 @@ const Contact = () => {
           <Image alt="" src={assets.right_arrow_white} className="w-4" />
         </button>
         <p className="mt-4 items-center">{result}</p>
-      </form>
-    </div>
+      </motion.form>
+    </motion.div>
   );
 };
 
