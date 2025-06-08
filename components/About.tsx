@@ -1,10 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import { assets, infoList, toolsData } from "@/assets/assets";
+import {motion} from 'motion/react'
 
 const About = () => {
   return (
-    <div id="about" className="w-full px-[12%] py-10 scroll-mt-20 pt-32">
+    <motion.div
+          initial={{  opacity: 0 }}
+          whileInView={{  opacity: 1 }}
+          transition={{ duration: 1 }}
+    
+    id="about" className="w-full px-[12%] py-10 scroll-mt-20 pt-32">
       <h4 className="text-center mb-2 text-lg font-ovo">Inroduction</h4>
       <h2 className="text-center text-5xl font-ovo">About me</h2>
       <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
@@ -49,7 +55,7 @@ const About = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
