@@ -8,7 +8,14 @@ import Servives from "@/components/Servives";
 import Work from "@/components/Work";
 import { useEffect, useState } from "react";
 export default function Home() {
-  const [isDarkMode, setIsDarkMOde] = useState(true);
+  const [isDarkMode, setIsDarkMOde] = useState(false);
+
+   useEffect(() => {
+    const theme = localStorage.theme;
+    if (localStorage.theme === "dark"||('theme' in localStorage)&& window.matchMedia('(prefers-color-scheme:dark)')) {
+      setIsDarkMOde(true);
+    }
+  }, [])
 
   useEffect(() => {
     if (isDarkMode) {
