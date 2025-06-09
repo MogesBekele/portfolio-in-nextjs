@@ -22,9 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth darkMode">
       <body
-        className={`${outfit.variable} ${ovo.variable} antialiased leading-8 overflow-x-hidden dark:bg-gray-950 dark: text-white`}
+        className={`${outfit.variable} ${ovo.variable} antialiased leading-8 overflow-x-hidden darkMode:bg-gray-950 darkMode:text-white`}
       >
         {children}
       </body>
