@@ -36,7 +36,8 @@ const Header = () => {
         transition={{ duration: 0.7, delay: 0.6 }}
         className="max-w-2xl mx-auto "
       >
-         I am excited to merge my technical expertise with my newfound skills in web development to deliver innovative solutions.
+        I am excited to merge my technical expertise with my newfound skills in
+        web development to deliver innovative solutions.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 ">
         <motion.a
