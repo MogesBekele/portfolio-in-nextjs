@@ -51,7 +51,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="flex-1 "
         >
-          <p className=" mb-10 max-w-2xl items-center justify-center font-ovo">
+          <p className=" mb-10 max-w-2xl text-center font-ovo">
             I am committed to web development and software engineering, with a
             solid background in programming languages. My dedication to
             continuous learning and problem-solving helps me stay current with
