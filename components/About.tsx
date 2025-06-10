@@ -51,12 +51,8 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="flex-1 "
         >
-          <p className=" mb-10 max-w-2xl font-ovo">
-            i am exprienced Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Laudantium sunt, sit officia quisquam ex minus. Neque quis cum
-            quo vitae laboriosam consequuntur. Iste accusamus atque sequi
-            delectus deleniti magni culpa! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Ut, facere.
+          <p className=" mb-10 max-w-2xl items-center font-ovo">
+                 I am committed to web development and software engineering, with a solid background in programming languages. My dedication to continuous learning and problem-solving helps me stay current with the latest technologies, enabling me to create innovative and efficient solutions.
           </p>
           <motion.ul
             initial={{ opacity: 0 }}

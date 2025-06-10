@@ -36,7 +36,7 @@ const Header = () => {
         transition={{ duration: 0.7, delay: 0.6 }}
         className="max-w-2xl mx-auto "
       >
-        I am Fullstack developer from Ethoipia{" "}
+           I am committed to web development and software engineering, with a solid background in programming languages. My dedication to continuous learning and problem-solving helps me stay current with the latest technologies, enabling me to create innovative and efficient solutions.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 ">
         <motion.a
