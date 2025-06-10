@@ -42,9 +42,7 @@ const Servives = () => {
         transition={{ duration: 0.7, delay: 0.5 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo"
       >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius non
-        blanditiis libero accusamus molestiae, maxime suscipit eos provident
-        facilis voluptas ex distinctio saepe,
+    I am excited to merge my technical expertise with my newfound skills in web development to deliver innovative solutions
       </motion.p>
 
       <motion.div
