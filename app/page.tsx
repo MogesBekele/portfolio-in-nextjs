@@ -10,8 +10,6 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [isDarkMode, setIsDarkMOde] = useState(false);
 
-
-
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
